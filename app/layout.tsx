@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import Link from 'next/link'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,10 +25,73 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        
+        <header>
+          <nav className="bg-white shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-16">
+            <div className="flex items-center">
+              <Link  href="/" className="text-xl font-bold text-gray-800">Challenge Module 1</Link>
+            </div>
+            <div className="hidden md:flex items-center space-x-4">
+              <Link
+                href="/challenge/about"
+                className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+              >
+                About
+              </Link>
+              <Link
+                href="/challenge/service"
+                className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300"
+              >
+                Service
+              </Link>
+              <Link
+                href="/challenge/contact"
+                className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-300"
+              >
+                Contact
+              </Link>
+            </div>
+            {/* Menu mobile */}
+            <div className="md:hidden flex items-center">
+              <div className="flex flex-col space-y-2">
+                <Link
+                  href="/challenge/about"
+                  className="bg-blue-500 text-white px-3 py-1 text-sm rounded hover:bg-blue-600 transition duration-300"
+                >
+                  About
+                </Link>
+                <Link
+                  href="/challenge/service"
+                  className="bg-green-500 text-white px-3 py-1 text-sm rounded hover:bg-green-600 transition duration-300"
+                >
+                  Service
+                </Link>
+                <Link
+                  href="/challenge/contact"
+                  className="bg-red-500 text-white px-3 py-1 text-sm rounded hover:bg-red-600 transition duration-300"
+                >
+                  Contact
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      </header>
+      <main>{children}</main>
+     
+        
+      <footer className="mt-8 py-6 text-center text-gray-600">
+        <p>&copy; 2026 Votre Entreprise. Tous droits réservés.</p>
+      </footer>
+       
+      </body>
     </html>
   )
 }
