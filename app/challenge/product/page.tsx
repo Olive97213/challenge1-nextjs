@@ -14,7 +14,7 @@ const page = () => {
               className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 cursor-pointer hover:text-green-600 transition duration-300"
               onClick={() => alert('Hello, to service!')}
             >
-              Page Services
+              Page produits
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Découvrez tous nos services conçus pour répondre à vos besoins.
