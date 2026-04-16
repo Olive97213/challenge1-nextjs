@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Navigation responsive */}
-      
+
       {/* Contenu principal responsive */}
       <main className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -18,8 +18,8 @@ const page = () => {
               Page Contact
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              N'hésitez pas à nous contacter pour toute question ou demande d'information.
-              Nous sommes là pour vous aider !
+              N'hésitez pas à nous contacter pour toute question ou demande
+              d'information. Nous sommes là pour vous aider !
             </p>
 
             {/* Formulaire de contact responsive */}
@@ -27,7 +27,10 @@ const page = () => {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Nom
                     </label>
                     <input
@@ -38,7 +41,10 @@ const page = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Email
                     </label>
                     <input
@@ -50,7 +56,10 @@ const page = () => {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -72,15 +81,21 @@ const page = () => {
             {/* Informations de contact responsive */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
               <div className="bg-red-50 p-6 rounded-lg border border-red-200">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Téléphone</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  Téléphone
+                </h3>
                 <p className="text-gray-600">+33 1 23 45 67 89</p>
               </div>
               <div className="bg-red-50 p-6 rounded-lg border border-red-200">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Email</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  Email
+                </h3>
                 <p className="text-gray-600">contact@example.com</p>
               </div>
               <div className="bg-red-50 p-6 rounded-lg border border-red-200">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">Adresse</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  Adresse
+                </h3>
                 <p className="text-gray-600">123 Rue de la Tech, Paris</p>
               </div>
             </div>

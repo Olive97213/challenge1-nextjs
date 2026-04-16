@@ -31,11 +31,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Header />
         <main>{children}</main>
-      
+
         <footer className="mt-8 py-6 text-center text-gray-600">
           <p>&copy; 2026 Votre Entreprise. Tous droits réservés.</p>
         </footer>
-      
       </body>
     </html>
   )

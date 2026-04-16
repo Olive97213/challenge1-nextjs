@@ -5,8 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      
-    {/* Contenu principal responsive */}
+      {/* Contenu principal responsive */}
       <main className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white rounded-lg shadow-lg p-8 sm:p-12">
@@ -24,19 +23,25 @@ const page = () => {
             {/* Services responsive */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Développement Web</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  Développement Web
+                </h3>
                 <p className="text-gray-600">
                   Création d'applications web modernes et performantes.
                 </p>
               </div>
               <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Design UI/UX</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  Design UI/UX
+                </h3>
                 <p className="text-gray-600">
                   Interfaces utilisateur intuitives et attrayantes.
                 </p>
               </div>
               <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Consulting</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  Consulting
+                </h3>
                 <p className="text-gray-600">
                   Accompagnement technique et stratégique.
                 </p>

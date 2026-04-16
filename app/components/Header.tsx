@@ -1,16 +1,20 @@
-"use client"
+'use client'
 
 import Link from 'next/link'
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
-import { MdAccountCircle } from "react-icons/md";
+import { MdAccountCircle } from 'react-icons/md'
 
 const navItems = [
-  { href: '/challenge/about', label: 'À propos', color: 'bg-blue-500 hover:bg-blue-600' },
-  { href: '/challenge/product', label: 'Produit', color: 'bg-green-500 hover:bg-green-600' },
-  { href: '/challenge/contact', label: 'Contact', color: 'bg-red-500 hover:bg-red-600' },
+  { href: '/about', label: 'À propos', color: 'bg-blue-500 hover:bg-blue-600' },
+  {
+    href: '/product',
+    label: 'Produit',
+    color: 'bg-green-500 hover:bg-green-600',
+  },
+  { href: '/contact', label: 'Contact', color: 'bg-red-500 hover:bg-red-600' },
 ]
-const accountItem = [{ href: '/challenge/account'}]
+const accountItem = [{ href: '/account' }]
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,16 +39,13 @@ export default function Header() {
               </Link>
             ))}
           </div>
-          <div>{accountItem.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-              ><MdAccountCircle size={30} />
-                
+          <div>
+            {accountItem.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <MdAccountCircle size={30} />
               </Link>
             ))}
-            
-            </div>
+          </div>
 
           {/* NAVBAR MOBILE */}
 
