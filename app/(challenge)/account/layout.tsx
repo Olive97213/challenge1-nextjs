@@ -42,7 +42,11 @@ export default function accountLayout({
               </nav>
             </aside>
 
-            <main className="flex-1 p-6">{children}</main>
+            <main className="flex-1 p-6">
+              {children}
+              {admin}
+              {user}
+            </main>
           </div>
         </div>
       </div>

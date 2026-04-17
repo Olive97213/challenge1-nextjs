@@ -7,11 +7,12 @@ export default function Layout({
   admin: React.ReactNode
   user: React.ReactNode
 }) {
-  const role = Math.random() > 0.5 ? 'admin' : 'user'
+  // const role = Math.random() > 0.5 ? 'admin' : 'user'
   return (
     <>
       <div>
-        {children} {role === 'admin' ? admin : user}
+        {/* {children} {role === 'admin' ? admin : user} */}
+        {children} {admin}
       </div>
     </>
   )
