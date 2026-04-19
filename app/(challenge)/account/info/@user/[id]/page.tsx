@@ -1,5 +1,5 @@
 import UserDashboard from '@/app/components/UserDashboard'
-const { getUserLogin } = require('@/services/userService')
+import { getUser } from '@/services/userService'
 
 export default async function page({
   params,
@@ -7,8 +7,7 @@ export default async function page({
   params: Promise<{ id: string }>
 }) {
   const { id } = await params
-  const results = await getUserLogin(id)
-
+  const results = await getUser(id)
   // await new Promise((resolve) => {
   //   setTimeout(resolve, 3000)
   // })
